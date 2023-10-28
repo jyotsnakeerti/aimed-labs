@@ -29,13 +29,13 @@ function App() {
     //  */}
     //  <Login/>
     // </div>
-    <Router>
-    <Routes>
-      <Route path="/aimed-labs" element={<Login/>} />
-      <Route path="/register" element={<Register/>} />
-  //       <Route path="/success" element={<Success/>} />
-    </Routes>
-  </Router>
+    <Route>
+    <Route path="/aimed-labs" element={<Login/>}>
+      {/* <Route path="/aimed-labs" element={<Login/>} /> */}
+          <Route path="/register" element={<Register/>} />
+          <Route path="/success" element={<Success/>} />
+    </Route>
+  </Route>
   );
 }
 
