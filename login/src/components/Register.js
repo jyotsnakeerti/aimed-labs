@@ -35,7 +35,7 @@ const Register = () => {
       setPassword('');
       setConfirmPassword('');
       setTimeout(() => {
-        window.location.href = '/aimed-labs';
+        window.location.href = '/';
       }, 2000); 
     } else {
       setRegistrationMessage('Password and Confirm Password do not match.');
@@ -75,7 +75,7 @@ const Register = () => {
         <RegisterButton onClick={handleRegister}>Register</RegisterButton>
         <LoginLink>
           Already have an account?{' '}
-          <a href="/aimed-labs" style={{ fontWeight: 'bold' }}>
+          <a href="/" style={{ fontWeight: 'bold' }}>
             Login Here
           </a>
         </LoginLink>
