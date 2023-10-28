@@ -7,7 +7,7 @@ const Success = () => {
     const history = useNavigate();
     useEffect(() => {
     const timer = setTimeout(() => {
-        history('/');
+        history('/aimed-labs');
     }, 3000);
 
     return () => clearTimeout(timer);
